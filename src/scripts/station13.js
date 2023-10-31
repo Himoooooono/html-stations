@@ -7,11 +7,10 @@ const returnThisData = function () {
 };
 // ↑関数の中の処理は変更しないでください
 
-const object = {
+const object =  {
   data: "object data",
   func: returnThisData,
 };
 
-function getData() {
-  return object.func();
-}
+// この下でgetData関数をアロー式で実装してください
+const getData = object.func;
